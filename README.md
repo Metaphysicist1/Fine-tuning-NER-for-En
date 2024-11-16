@@ -1,13 +1,44 @@
-### Fine-tuning NER using PyTorch, 2024 Aug
-##### NER - Named Entity Recognition
-* Trained on **Jupyter** Notebook + **CUDA** + 4GB **GPU**  (**Nvidia** 1650 Max-Q)
-* Public Dataset from **kaggle**: https://paperswithcode.com/dataset/conll-2003
-* Used libraries **torch,** **seqeval,** **transformers,**
-* Model: **Bert** ["google-bert/bert-base-cased"]
-* metrics from **seqeval** [f1_score, recall_score, precision_score]
+# 🏷️ Fine-tuning NER using PyTorch
 
-CoNLL-2003 is a named entity recognition dataset released as a part of CoNLL-2003 shared task: language-independent named entity recognition. The data consists of eight files covering two languages: English and German. For each of the languages there is a training file, a development file, a test file and a large file with unannotated data.
+![PyTorch](https://img.shields.io/badge/PyTorch-Latest-orange.svg)
+![BERT](https://img.shields.io/badge/BERT-base--cased-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Last Update](https://img.shields.io/badge/Last%20Update-August%202024-brightgreen.svg)
 
-The English data was taken from the Reuters Corpus. This corpus consists of Reuters news stories between August 1996 and August 1997. For the training and development set, ten days worth of data were taken from the files representing the end of August 1996. For the test set, the texts were from December 1996. The preprocessed raw data covers the month of September 1996.
+## 🎯 Overview
+A Named Entity Recognition (NER) model fine-tuned using PyTorch and BERT on the CoNLL-2003 dataset. The project demonstrates how to train and evaluate a state-of-the-art NER model using modern deep learning techniques.
 
-The text for the German data was taken from the ECI Multilingual Text Corpus. This corpus consists of texts in many languages. The portion of data that was used for this task, was extracted from the German newspaper Frankfurter Rundshau. All three of the training, development and test sets were taken from articles written in one week at the end of August 1992. The raw data were taken from the months of September to December 1992.
+## 🛠️ Tech Stack
+- **Framework:** PyTorch
+- **Model:** google-bert/bert-base-cased
+- **Libraries:** 
+  - transformers
+  - seqeval
+  - torch
+- **Hardware:** NVIDIA 1650 Max-Q (4GB GPU)
+- **Environment:** Jupyter Notebook + CUDA
+
+## 📊 Dataset
+Using the [CoNLL-2003 dataset](https://paperswithcode.com/dataset/conll-2003) which includes:
+- **English Data:** Reuters news stories (Aug 1996 - Aug 1997)
+  - Training set: End of August 1996
+  - Test set: December 1996
+  - Raw data: September 1996
+
+- **German Data:** Frankfurter Rundshau newspaper
+  - All sets: End of August 1992
+  - Raw data: September-December 1992
+
+## 📈 Evaluation Metrics
+Using seqeval for evaluation:
+- F1 Score
+- Recall Score
+- Precision Score
+
+
+
+### Prerequisites
+- Python 3.8+
+- CUDA-capable GPU
+- 4GB+ GPU Memory
+
